@@ -13,6 +13,7 @@ var qsHour = &survey.Question{
 	Name: "Hour",
 	Prompt: &survey.Input{
 		Message: "Hour(HH:MM)",
+		Default: time.Now().Format("09:00"),
 	},
 	Validate: ValidateHour,
 }
